@@ -34,15 +34,19 @@ export const turnoComputadora = ( puntosMinimos, puntosHTML,divCartasComputadora
 
     } while(  (puntosComputadora <= puntosMinimos)  && (puntosMinimos <= 21 ) );
 
-    setTimeout(() => {
+    
         if( puntosComputadora === puntosMinimos ) {
-            alert('Nadie gana :(');
+            // alert('Nadie gana :(');
+            return 'Nadie gana :(';
         } else if ( puntosMinimos > 21 ) {
-            alert('Computadora gana')
+            // alert('Computadora gana')
+            return 'Computadora gana';
         } else if( puntosComputadora > 21 ) {
-            alert('Jugador Gana');
+            // alert('Jugador Gana');
+            return 'Jugador Gana';
         } else {
-            alert('Computadora Gana')
+            // alert('Computadora Gana')
+            return 'Computadora Gana';
         }
-    }, 100 );
+   
 }
